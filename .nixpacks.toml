@@ -1,0 +1,11 @@
+[phases.setup]
+aptPkgs = [
+  "poppler-utils",   # For pdf2image
+  "tesseract-ocr",   # For pytesseract
+  "libgl1",          # For OpenCV
+  "gcc",             # For native builds
+  "ffmpeg"           # Optional for torch/media
+]
+
+[start]
+cmd = "gunicorn wsgi:app --bind 0.0.0.0:$PORT"
