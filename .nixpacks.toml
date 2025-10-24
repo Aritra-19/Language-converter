@@ -2,10 +2,8 @@
 aptPkgs = [
   "poppler-utils",   # For pdf2image
   "tesseract-ocr",   # For pytesseract
-  "libgl1",          # For OpenCV (fixes your error)
-  "libglib2.0-0",    # Required by OpenCV on some builds
-  "gcc",             # For compiling any Python packages
-  "ffmpeg"           # Optional: used by torch/media
+  "gcc",             # For compiling dependencies
+  "ffmpeg"           # Optional, for torch/media
 ]
 
 [start]
