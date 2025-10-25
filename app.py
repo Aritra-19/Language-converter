@@ -114,6 +114,10 @@ def preprocess_and_extract_text_fallback(image_path, language='eng'):
 def index():
     return render_template('body.html')
 
+@app.route("/ping")
+def ping():
+    return "pong", 200
+
 @app.route('/converter')
 def converter():
     return render_template('index.html')
